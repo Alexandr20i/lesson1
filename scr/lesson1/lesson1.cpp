@@ -1,17 +1,19 @@
 # include <iostream>
 #include <chrono> // Подключаем библиотеку для работы со временем
-#include <string>
+// #include <string>
 
 
-using namespace std::chrono; // Чтобы не писать std::chrono:: каждый раз
+using namespace std::chrono; 
 using namespace std;
 
 int main() {
+    setlocale(LC_ALL, "Russian");
     // 1. Засекаем время ДО начала работы
     auto start = high_resolution_clock::now();
 
     int data;
-    string name;
+    // string name;
+    char name[64];
 
     // int currentYear = year_month_day{floor<days>(system_clock::now())}.year();
     int currentYear = 2026;

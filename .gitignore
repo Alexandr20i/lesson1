@@ -1,3 +1,4 @@
-*main.dSYM
+*.dSYM
 .vscode/
-*main
+__pycache__/
+.DS_Store
